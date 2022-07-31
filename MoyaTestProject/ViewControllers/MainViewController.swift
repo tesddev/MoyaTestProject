@@ -23,11 +23,11 @@ class MainViewController: UIViewController {
         view.backgroundColor = .green
         
         
-        NetworkManager.shared.fetchEmojis { emojis in
+        NetworkManager.shared.fetchEmojis {[weak self] emojis in
             print(emojis)
         }
         
-        NetworkManager.shared.fetchSearchedEmojis(username: "tesddev") { searchedEmojis in
+        NetworkManager.shared.fetchSearchedEmojis(username: "tesddev") {[weak self] searchedEmojis in
             print("see searched emojis \(searchedEmojis)")
             
             let url = URL(string: searchedEmojis.avatarURL)!
@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
                         DispatchQueue.main.async {
                             // Create Image and Update Image View
                             print("here is the data \(data)")
-                            self.imageView.image = UIImage(data: data)
+                            self?.imageView.image = UIImage(data: data)
                         }
                     }
                 }
@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
             print(err)
         }
         
-        NetworkManager.shared.getAppleRepos(page: 3, size: 10) { result in
+        NetworkManager.shared.getAppleRepos(page: 3, size: 10) {[weak self] result in
             switch result{
             case .success(let url):
                 print(url)
