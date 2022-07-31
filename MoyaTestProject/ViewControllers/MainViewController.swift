@@ -23,11 +23,11 @@ class MainViewController: UIViewController {
         view.backgroundColor = .green
         
         
-//        NetworkManager.shared.fetchEmojis { emojis in
-//            print(emojis)
-//        }
+        NetworkManager.shared.fetchEmojis { emojis in
+            print(emojis)
+        }
         
-        NetworkManager.shared.fetchSearchedEmojis(username: "blisapps") { searchedEmojis in
+        NetworkManager.shared.fetchSearchedEmojis(username: "tesddev") { searchedEmojis in
             print("see searched emojis \(searchedEmojis)")
             
             let url = URL(string: searchedEmojis.avatarURL)!
@@ -46,14 +46,14 @@ class MainViewController: UIViewController {
             print(err)
         }
         
-//        NetworkManager.shared.getAppleRepos(page: 3, size: 10) { result in
-//            switch result{
-//            case .success(let url):
-//                print(url)
-//            case .failure(let err):
-//                print(err.localizedDescription)
-//            }
-//        }
+        NetworkManager.shared.getAppleRepos(page: 3, size: 10) { result in
+            switch result{
+            case .success(let url):
+                print(url)
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+        }
         
         configureViews()
     }
