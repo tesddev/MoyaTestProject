@@ -10,13 +10,15 @@
 		71AD21FD36213CC5B667241E /* Pods_MoyaTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA37726A46B610719F6F7B3 /* Pods_MoyaTestProject.framework */; };
 		82416EF22895481B005683A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416EF12895481B005683A1 /* AppDelegate.swift */; };
 		82416EF42895481B005683A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416EF32895481B005683A1 /* SceneDelegate.swift */; };
-		82416EF62895481B005683A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416EF52895481B005683A1 /* ViewController.swift */; };
+		82416EF62895481B005683A1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416EF52895481B005683A1 /* MainViewController.swift */; };
 		82416EF92895481B005683A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82416EF72895481B005683A1 /* Main.storyboard */; };
 		82416EFB2895481E005683A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82416EFA2895481E005683A1 /* Assets.xcassets */; };
 		82416EFE2895481E005683A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82416EFC2895481E005683A1 /* LaunchScreen.storyboard */; };
 		82416F06289549F0005683A1 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416F05289549EF005683A1 /* EmojiModel.swift */; };
 		82416F0928954AB7005683A1 /* EmojiSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416F0828954AB5005683A1 /* EmojiSearchModel.swift */; };
 		82416F0B28954AD8005683A1 /* AppleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416F0A28954AD8005683A1 /* AppleURL.swift */; };
+		82416F0D2895E254005683A1 /* AppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416F0C2895E254005683A1 /* AppAPI.swift */; };
+		82416F102895F081005683A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82416F0F2895F081005683A1 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,7 @@
 		82416EEE2895481B005683A1 /* MoyaTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82416EF12895481B005683A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82416EF32895481B005683A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82416EF52895481B005683A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82416EF52895481B005683A1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		82416EF82895481B005683A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82416EFA2895481E005683A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82416EFD2895481E005683A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		82416F05289549EF005683A1 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		82416F0828954AB5005683A1 /* EmojiSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSearchModel.swift; sourceTree = "<group>"; };
 		82416F0A28954AD8005683A1 /* AppleURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleURL.swift; sourceTree = "<group>"; };
+		82416F0C2895E254005683A1 /* AppAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAPI.swift; sourceTree = "<group>"; };
+		82416F0F2895F081005683A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,13 +73,12 @@
 		82416EF02895481B005683A1 /* MoyaTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				82416EF12895481B005683A1 /* AppDelegate.swift */,
-				82416EF32895481B005683A1 /* SceneDelegate.swift */,
-				82416EF52895481B005683A1 /* ViewController.swift */,
-				82416EF72895481B005683A1 /* Main.storyboard */,
-				82416EFA2895481E005683A1 /* Assets.xcassets */,
-				82416EFC2895481E005683A1 /* LaunchScreen.storyboard */,
 				82416EFF2895481E005683A1 /* Info.plist */,
+				82416F132895F0E0005683A1 /* ViewControllers */,
+				82416F0E2895F064005683A1 /* NetworkManagers */,
+				82416F112895F08D005683A1 /* Delegates */,
+				82416F122895F0AE005683A1 /* Storyboards */,
+				82416F142895F110005683A1 /* AssetsAndInfoPlist */,
 				82416F0728954A04005683A1 /* Models */,
 			);
 			path = MoyaTestProject;
@@ -89,6 +92,49 @@
 				82416F0A28954AD8005683A1 /* AppleURL.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		82416F0E2895F064005683A1 /* NetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				82416F0C2895E254005683A1 /* AppAPI.swift */,
+				82416F0F2895F081005683A1 /* NetworkManager.swift */,
+			);
+			path = NetworkManagers;
+			sourceTree = "<group>";
+		};
+		82416F112895F08D005683A1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				82416EF12895481B005683A1 /* AppDelegate.swift */,
+				82416EF32895481B005683A1 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		82416F122895F0AE005683A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				82416EF72895481B005683A1 /* Main.storyboard */,
+				82416EFC2895481E005683A1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		82416F132895F0E0005683A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82416EF52895481B005683A1 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82416F142895F110005683A1 /* AssetsAndInfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				82416EFA2895481E005683A1 /* Assets.xcassets */,
+			);
+			path = AssetsAndInfoPlist;
 			sourceTree = "<group>";
 		};
 		932E4B7C0EDCC915765A5C4E /* Pods */ = {
@@ -224,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82416F06289549F0005683A1 /* EmojiModel.swift in Sources */,
+				82416F0D2895E254005683A1 /* AppAPI.swift in Sources */,
 				82416F0928954AB7005683A1 /* EmojiSearchModel.swift in Sources */,
-				82416EF62895481B005683A1 /* ViewController.swift in Sources */,
+				82416EF62895481B005683A1 /* MainViewController.swift in Sources */,
+				82416F102895F081005683A1 /* NetworkManager.swift in Sources */,
 				82416EF22895481B005683A1 /* AppDelegate.swift in Sources */,
 				82416EF42895481B005683A1 /* SceneDelegate.swift in Sources */,
 				82416F0B28954AD8005683A1 /* AppleURL.swift in Sources */,
